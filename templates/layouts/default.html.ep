@@ -5,16 +5,9 @@
   <title><%= title %></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  %= stylesheet '/css/h5bp.css'
-  %= stylesheet '/css/style.css'
-  %= javascript '/js/libs/modernizr.js'
+  <script data-main="js/main" src="js/vendor/require.js"></script>
 </head>
 <body>
-
   <%= content %>
-  %= javascript '/js/libs/jquery.js'
-  %= javascript '/js/libs/underscore.js'
-  %= javascript '/js/plugins.js'
-  %= javascript '/js/script.js'
 </body>
 </html>

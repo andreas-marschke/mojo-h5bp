@@ -1,4 +1,4 @@
 % title 'Start';
 % layout 'default';
 
-Wellcome!
+<div id="root"></div>
