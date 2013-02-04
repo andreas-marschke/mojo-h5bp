@@ -9,6 +9,105 @@ get '/' => sub {
   $self->render('index');
 };
 
+get '/layouts' => sub {
+  my $self = shift;
+  $self->render_json([
+    {
+      id => "3col",
+      name=> "3-column-Layout",
+      description=> "Split up into several columns for a clear seperation",
+      preview=> "img/layout-icons/preview-3col.png",
+      template => "templates/layouts/3col.html",
+      css => ["/css/bootstrap.css"],
+      js => ["/js/vendor/jquery.js"]
+     },
+    {
+      id => "hero",
+      name=> "Hero Style Layout",
+      description=> "A layout modelled after the bootstrap Hero example",
+      preview=> "img/layout-icons/preview-hero.png",
+      template => "templates/layouts/hero.html",
+      css => ["/css/bootstrap.css"],
+      js => ["/js/vendor/jquery.js"]
+     },
+    {
+      id => "3x3",
+      name=> "3x3 Layout",
+      description=> "A 3 by 3 layout small boxing",
+      preview=> "img/layout-icons/preview-3x3.png",
+      template => "templates/layouts/3x3.html",
+      css => ["/css/bootstrap.css"],
+      js => ["/js/vendor/jquery.js"]
+    }
+   ]);
+};
+get 'widgets' => sub {
+  my $self = shift;
+  $self->render_json([
+    {
+      name =>  "Visual",
+      id => "visual",
+      elements => [{
+	id => "graph",
+	name=> "Graph",
+	description=> "Graphing data",
+	category=> "Graph",
+	preview=> "/img/preview.png",
+	script => "widgets/graph.js",
+	config =>  [
+	  {
+	    type=> "ComboSelect",
+	    name=> "Host",
+	    source=> []
+	   },
+	  {
+	    type=> "ComboSelect",
+	    name=> "Service",
+	    source=> []
+	   },
+	 ],
+      },{
+	id => "status",
+	name=> "Status Icon",
+	description=> "View Status of Entity",
+	category=> "Icon",
+	preview=> "/img/preview.png",
+	script => "widgets/icon.js",
+	config =>  [
+	  {
+	    type=> "ComboSelect",
+	    name=> "Host",
+	    source=> []
+	   },
+	  {
+	    type=> "ComboSelect",
+	    name=> "Service",
+	    source=> []
+	   },
+	 ],
+      }
+     ],
+    },
+    {
+      name => "Textual",
+      id => "textual",
+      elements => [{
+	id => "text",
+	name=> "Simple Text",
+	description=> "A simple Text element",
+	category=> "Graph",
+	preview=> "/img/preview.png",
+	script => "widgets/text.js",
+	config =>  [
+	  {
+	    type=> "text",
+	    name=> "Text",
+	    source=> ""
+	   },
+	 ],
+      }],
+    }]);
+};
 app->start;
 
 

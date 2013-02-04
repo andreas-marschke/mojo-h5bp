@@ -1,0 +1,84 @@
+.widgets-show {
+  z-index: 2;
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  color: #222;
+  position: absolute;
+  top:0;
+  left:-100px;
+  padding-left: 3px;
+}
+
+.widgets-show i {
+  padding-top: 3px;
+}
+
+#widgets {
+  height: 100%;
+  width: 15%;
+  min-width: 120px;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  top:0;
+  display: inline;
+  background-color: #222;
+  color: #eee;
+  margin: 0px;
+}
+
+#widgets .heading#title {
+  height: 1.8em;
+  width: 100%;
+  border-bottom: 0;
+  padding-top: 3px;
+  font-size: 20px;
+  font-weight: 100;
+  border-bottom: dotted 1px #bbb;
+}
+
+#widgets .heading#title .pull-left{
+  padding-top: 5px;
+}
+
+#widgets .heading {
+  height: 1.5em;
+  width: 100%;
+  border-bottom: solid 1px #bbb;
+  padding-top: 3px;
+}
+
+#widgets .heading .wrapper {
+  padding-left: 3%;
+}
+
+#widgets .heading .wrapper .pull-right {
+  padding-right: 3%;
+}
+
+
+#widgets .content {
+  display: inline-block;
+  width: 100%;
+}
+
+#widgets .element {
+  background-color: #222;
+  width: 100%;
+  float: left;
+}
+
+#widgets .element .inner{
+  padding-top: 4px;
+  margin-left: 1em;
+  font-size: 0.9em;
+}
+
+#widgets .element:hover {
+  background-color: #333;
+}
+
+#widgets .clear {
+  clear: both;
+}

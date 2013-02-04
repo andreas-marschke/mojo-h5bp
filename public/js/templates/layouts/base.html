@@ -1,0 +1,17 @@
+<iframe>
+  <html>
+    <head>
+    </head>
+    <body>
+      <!-- Content -->
+      <%= content %>
+      
+      <!-- Javascript -->      
+      <%_.each(layout.js,function(js){%>
+        <script type="text/javascript" src="<%= js.path %>"/></script>
+      <% }); %>
+
+    </body>
+  </html>
+</iframe>
+

@@ -1,4 +1,19 @@
 % title 'Start';
 % layout 'default';
 
-Wellcome!
+<div class="container-fluid">  
+ <div class="row-fluid">
+   <a>
+   <div class="hide widgets-show">
+     <div class="wrapper">
+       <i class="icon-circle-arrow-right icon-2x"></i>
+     </div>
+   </div>
+   </a>
+   <div id="widgets" class="span2"></div>
+   <div id="dashboard" class="span10"></div>
+ </div>
+</div>
+
+<div id="toolbar"></div>
+<div id="css" class="hide"></div>

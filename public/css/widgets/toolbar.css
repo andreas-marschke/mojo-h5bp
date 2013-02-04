@@ -1,0 +1,134 @@
+#toolbar{
+  position: fixed;
+  width: 40%;
+  margin: 0 auto;
+  z-index:3;
+  top: 0;
+  left: 33%;
+  box-shadow: 0 8px 6px -6px #888;
+  -o-box-shadow: 0 8px 6px -6px #888;
+  -moz-box-shadow: 0 8px 6px -6px #888;
+  -webkit-box-shadow: 0 8px 6px -6px #888;
+}
+
+#toolbar .click {
+  cursor: pointer;
+}
+
+#toolbar .navbar {
+  margin-bottom: 0;
+}
+
+#toolbar .nav i {
+  padding-right: 6px;
+}
+
+#toolbar .dropdown-toggle {
+  cursor: pointer;
+}
+#toolbar .navbar-inverse .navbar-inner {
+  border-radius: 0px;
+  background-color: #222;
+  background-image: none;
+}
+
+#toolbar .layout.dropdown-menu {
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 0px;
+  background-color: #222;
+  color: #eee;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-left: -1px;
+}
+
+#toolbar .layout.dropdown-menu li > a {
+  padding: 0px;
+  white-space: normal;
+  width: 300px;
+  cursor: pointer;
+}
+
+#toolbar .media p {
+  margin-bottom: -5px;
+}
+
+#toolbar .media .description {
+  color: #999;
+  font-size: 9px;
+  line-height: 17px;
+  margin-left: 4px;
+  margin-top: 3px;
+}
+#toolbar .layout.dropdown-menu li > a:hover p{
+  color: white;
+}
+
+#toolbar .layout .media-body {
+  color: #eee;
+}
+
+#toolbar .layout .media-text {
+  padding-top: 3px;
+}
+
+#toolbar .layout .media-object {
+  background-color: #333;
+  width: 64px;
+  height: 64px;
+}
+
+#toolbar .layout .media-object .preview {
+  margin: 16px 16px;
+  background-color: white;
+  width: 32px;
+  height: 32px;
+}
+
+
+#toolbar .layout-select .media {
+  display: list-item;
+}
+#toolbar a.layout-select {
+  border-bottom: 1px #444 solid;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-device-width: 1025px) {
+ 
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    padding-right: 2px;
+    }
+  
+  ::-webkit-scrollbar-button:start:decrement,
+  ::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 0px;
+    }
+  
+  ::-webkit-scrollbar-button:vertical:increment {
+    background-color: #333;
+    }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+    -webkit-border-radius: 0px;
+    }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #333;
+    -webkit-border-radius: 0px;
+    }
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+    width: 50px;
+    background-color: #333;
+    -webkit-border-radius: 0px;
+    }
+}

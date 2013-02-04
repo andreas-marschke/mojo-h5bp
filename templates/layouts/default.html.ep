@@ -6,15 +6,16 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   %= stylesheet '/css/h5bp.css'
+  %= stylesheet '/css/chosen.css'
+  %= stylesheet '/css/bootstrap.css'
+  %= stylesheet '/css/font-awesome.min.css'
   %= stylesheet '/css/style.css'
-  %= javascript '/js/libs/modernizr.js'
+  %= stylesheet '/css/widgets/toolbar.css'
+  %= stylesheet '/css/widgets/dashboard.css'
+  %= stylesheet '/css/widgets/widgets.css'
+  <script data-main="js/designer.js" src="js/vendor/require.js"></script>
 </head>
 <body>
-
   <%= content %>
-  %= javascript '/js/libs/jquery.js'
-  %= javascript '/js/libs/underscore.js'
-  %= javascript '/js/plugins.js'
-  %= javascript '/js/script.js'
 </body>
 </html>

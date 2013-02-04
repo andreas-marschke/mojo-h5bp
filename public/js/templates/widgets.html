@@ -1,0 +1,31 @@
+<div id="title" class="heading">
+  <div class="wrapper">
+    <div class="pull-left">
+      Widgets
+    </div>
+    <div class="widgets-hide pull-right">
+      <i class="icon-large icon-circle-arrow-left"></i>
+    </div>    
+  </div>
+</div>
+
+<% categories.each(function(category) { %>
+<div class="heading">
+  <div class="wrapper">
+    <div class="pull-left">
+      <%= category.get("name") %>
+    </div>
+    <div class="pull-right" data-toggle="<%= category.get('id') %>">
+      <i class="icon-chevron-down"></i>
+    </div>    
+  </div>
+</div>
+<div class="content">
+  <% category.get('elements').each(function(widget) { %>
+  <div class="element" id="<%= widget.get('id') %>">
+    <div class="inner"><%= widget.get('name')%></div>
+  </div>
+  <% }); %>
+  <div class="clear"></div>
+</div>
+<% }); %>
