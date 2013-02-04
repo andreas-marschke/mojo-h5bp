@@ -1,0 +1,28 @@
+<div class="modal hide fade" id="<%= widget.get("id")%>">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3><%= widget.get('name') %> Configuration </h3>
+  </div>
+  <div class="modal-body">
+    <dl class="dl-horizontal">
+    <% _.each(widget.get('config'),function(config){%>
+      <dt><%= config.get("name")%></dt>
+      <dd>
+	<% if(config.get("type") === "ComboSelect") { %>
+	  <option>
+	    
+	  </option>
+	<% else if(config.get("type") === "Text") { %>
+	  <input type="text" placeholder="Type something…"></input>
+	<% } %>
+      </dd>
+    <% }); %>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary save">Save changes</a>
+  </div>
+</div>
+
+
+
